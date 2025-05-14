@@ -1,2 +1,2 @@
-# Farm-cia-Popular
+# Farmácia Popular - Projeto Front-End
 
