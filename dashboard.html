@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard de Estoque</title>
+  <link rel="shortcut icon" href="Imagens/farmacia.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Página Inicial</a></li>
+      <li><a href="#">Produtos</a></li>
+      <li><a href="#">Perfil</a></li>
+      <li><a href="#">Dashboard de Estoque</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Dashboard de Estoque</h1>
+    <p>Abaixo está uma visão geral dos medicamentos disponíveis:</p>
+
+    <!-- Controles -->
+    <section class="controles">
+      <input type="text" id="busca" placeholder="Buscar produto..." />
+      <button id="adicionar">+ Adicionar Produto</button>
+    </section>
+
+    <!-- Tabela -->
+    <section class="tabela">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome do Produto</th>
+            <th>Categoria</th>
+            <th>Quantidade</th>
+            <th>Validade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- ASMA -->
+          <tr><td data-label="ID">001</td><td data-label="Nome do Produto">brometo de ipratrópio 0,02mg</td><td data-label="Categoria">Asma</td><td data-label="Quantidade">100</td><td data-label="Validade">12/2025</td></tr>
+          <tr><td>002</td><td>brometo de ipratrópio 0,25mg</td><td>Asma</td><td>100</td><td>12/2025</td></tr>
+          <tr><td>003</td><td>dipropionato de beclometasona 200mcg</td><td>Asma</td><td>100</td><td>01/2026</td></tr>
+          <tr><td>004</td><td>dipropionato de beclometasona 250mcg</td><td>Asma</td><td>100</td><td>01/2026</td></tr>
+          <tr><td>005</td><td>dipropionato de beclometasona 50mcg</td><td>Asma</td><td>100</td><td>01/2026</td></tr>
+          <tr><td>006</td><td>sulfato de salbutamol 100mcg</td><td>Asma</td><td>100</td><td>11/2025</td></tr>
+          <tr><td>007</td><td>sulfato de salbutamol 5mg</td><td>Asma</td><td>100</td><td>11/2025</td></tr>
+
+          <!-- DIABETES -->
+          <tr><td>008</td><td>cloridrato de metformina 500mg</td><td>Diabetes</td><td>100</td><td>09/2025</td></tr>
+          <tr><td>009</td><td>cloridrato de metformina 500mg – ação prolongada</td><td>Diabetes</td><td>100</td><td>09/2025</td></tr>
+          <tr><td>010</td><td>cloridrato de metformina 850mg</td><td>Diabetes</td><td>100</td><td>09/2025</td></tr>
+          <tr><td>011</td><td>glibenclamida 5mg</td><td>Diabetes</td><td>100</td><td>10/2025</td></tr>
+          <tr><td>012</td><td>insulina humana regular 100ui/ml</td><td>Diabetes</td><td>100</td><td>08/2025</td></tr>
+          <tr><td>013</td><td>insulina humana 100ui/ml</td><td>Diabetes</td><td>100</td><td>08/2025</td></tr>
+          <tr><td>014</td><td>Dapagliflozina</td><td>Diabetes</td><td>100</td><td>01/2026</td></tr>
+
+          <!-- HIPERTENSÃO -->
+          <tr><td>015</td><td>atenolol 25mg</td><td>Hipertensão</td><td>100</td><td>12/2025</td></tr>
+          <tr><td>016</td><td>besilato de anlodipino 5 mg</td><td>Hipertensão</td><td>100</td><td>12/2025</td></tr>
+          <tr><td>017</td><td>captopril 25mg</td><td>Hipertensão</td><td>100</td><td>12/2025</td></tr>
+          <tr><td>018</td><td>cloridrato de propranolol 40mg</td><td>Hipertensão</td><td>100</td><td>12/2025</td></tr>
+          <tr><td>019</td><td>hidroclorotiazida 25mg</td><td>Hipertensão</td><td>100</td><td>12/2025</td></tr>
+          <tr><td>020</td><td>losartana potássica 50mg</td><td>Hipertensão</td><td>100</td><td>12/2025</td></tr>
+          <tr><td>021</td><td>maleato de enalapril 10mg</td><td>Hipertensão</td><td>100</td><td>12/2025</td></tr>
+          <tr><td>022</td><td>espironolactona 25 mg</td><td>Hipertensão</td><td>100</td><td>12/2025</td></tr>
+          <tr><td>023</td><td>furosemida 40 mg</td><td>Hipertensão</td><td>100</td><td>12/2025</td></tr>
+          <tr><td>024</td><td>succinato de metoprolol 25 mg</td><td>Hipertensão</td><td>100</td><td>12/2025</td></tr>
+
+          <!-- ANTICONCEPÇÃO -->
+          <tr><td>025</td><td>acetato de medroxiprogesterona 150mg</td><td>Anticoncepção</td><td>100</td><td>10/2026</td></tr>
+          <tr><td>026</td><td>etinilestradiol 0,03mg + levonorgestrel 0,15mg</td><td>Anticoncepção</td><td>100</td><td>10/2026</td></tr>
+          <tr><td>027</td><td>noretisterona 0,35mg</td><td>Anticoncepção</td><td>100</td><td>10/2026</td></tr>
+          <tr><td>028</td><td>valerato de estradiol 5mg + enantato de noretisterona 50mg</td><td>Anticoncepção</td><td>100</td><td>10/2026</td></tr>
+
+          <!-- OSTEOPOROSE -->
+          <tr><td>029</td><td>alendronato de sódio 70mg</td><td>Osteoporose</td><td>100</td><td>03/2026</td></tr>
+
+          <!-- DISLIPIDEMIA -->
+          <tr><td>030</td><td>sinvastatina 10mg</td><td>Dislipidemia</td><td>100</td><td>04/2026</td></tr>
+          <tr><td>031</td><td>sinvastatina 20mg</td><td>Dislipidemia</td><td>100</td><td>04/2026</td></tr>
+          <tr><td>032</td><td>sinvastatina 40mg</td><td>Dislipidemia</td><td>100</td><td>04/2026</td></tr>
+
+          <!-- PARKINSON -->
+          <tr><td>033</td><td>carbidopa 25mg + levodopa 250mg</td><td>Doença de Parkinson</td><td>100</td><td>07/2026</td></tr>
+          <tr><td>034</td><td>cloridrato de benserazida 25mg + levodopa 100mg</td><td>Doença de Parkinson</td><td>100</td><td>07/2026</td></tr>
+
+          <!-- GLAUCOMA -->
+          <tr><td>035</td><td>maleato de timolol 2,5mg</td><td>Glaucoma</td><td>100</td><td>06/2026</td></tr>
+          <tr><td>036</td><td>maleato de timolol 5mg</td><td>Glaucoma</td><td>100</td><td>06/2026</td></tr>
+
+          <!-- RINITE -->
+          <tr><td>037</td><td>budesonida 32mcg</td><td>Rinite</td><td>100</td><td>05/2026</td></tr>
+          <tr><td>038</td><td>budesonida 50mcg</td><td>Rinite</td><td>100</td><td>05/2026</td></tr>
+          <tr><td>039</td><td>dipropionato de beclometasona 50mcg/dose</td><td>Rinite</td><td>100</td><td>05/2026</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>

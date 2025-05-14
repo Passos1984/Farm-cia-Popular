@@ -1,0 +1,135 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  padding: 20px;
+  color: #333;
+}
+
+nav {
+  background-color: #4CAF50;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+h1 {
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.controles {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.controles input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  min-width: 250px;
+}
+
+.controles button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.controles button:hover {
+  background-color: #45a049;
+}
+
+.tabela {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table thead {
+  background-color: #4CAF50;
+  color: white;
+}
+
+table th, table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+  table thead {
+    display: none;
+  }
+
+  table, tbody, tr, td {
+    display: block;
+    width: 100%;
+  }
+
+  tr {
+    margin-bottom: 15px;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    padding: 10px;
+    border-radius: 6px;
+  }
+
+  td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-weight: bold;
+    text-align: left;
+  }
+}
+
+/* Filtro ao digitar */
+#busca {
+  transition: box-shadow 0.3s;
+}
+
+#busca:focus {
+  outline: none;
+  box-shadow: 0 0 5px #4CAF50;
+}
